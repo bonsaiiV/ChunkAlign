@@ -1,5 +1,5 @@
-# ChunkAllign
-A Datapack to execute functions alligned to chunks.
+# ChunkAlign
+A Datapack to execute functions aligned to chunks.
 
 ## Description
 Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5). Furthermore it expands the marked chunks (armor stand with custom tags) into a rectangle (box) and aligns it with the resulting grid.
