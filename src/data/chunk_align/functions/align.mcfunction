@@ -2,7 +2,9 @@
 #                                             #
 # Description                                 #
 # -----------                                 #
-# Aligns the armor stand with the chunk grid. #
+# Aligns the armor stand with the chunk grid  #
+# and copies the armor stand (only it's tags) #
+# across a rectangle of chunk edges.          #
 #                                             #
 ###############################################
 
@@ -27,6 +29,10 @@ execute if score @s countZ < 1 const run scoreboard players set @s countZ 1
 execute at @s if score @s countX > 1 const run function chunk_align:interchunk/align_x
 execute at @s if score @s countY > 1 const run function chunk_align:interchunk/align_y
 execute at @s if score @s countZ > 1 const run function chunk_align:interchunk/align_z
+
+function chunk_align:clone/x
+function chunk_align:clone/y
+function chunk_align:clone/z
 
 execute at @s run tp @s ~ ~ ~ 0 0
 
