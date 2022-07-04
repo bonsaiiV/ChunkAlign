@@ -1,6 +1,6 @@
 {
     "pack":{
         "pack_format": 10,
-		"description": "Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5)."
+		"description": "Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5). Furthermore it expands the marked chunks (armor stand with custom tags) into a rectangle (box) and aligns it with the resulting grid."
     }
 }
