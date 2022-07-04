@@ -1,0 +1,6 @@
+{
+    "pack":{
+        "pack_format": 10,
+		"description": "Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5)."
+    }
+}
