@@ -1,6 +1,6 @@
 {
     "pack":{
         "pack_format": 10,
-		"description": "Makes BOOM!!!"
+		"description": "Y > 0 => air"
     }
 }

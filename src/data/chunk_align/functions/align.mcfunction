@@ -13,27 +13,17 @@
 
 # to reupdate position most comands are prefixed with: execute at @s run
 
-tag @s add chunk_align
+# Set default Alignment
+## make sure scores are set
+scoreboard players add @s alignX 0
+scoreboard players add @s alignY 0
+scoreboard players add @s alignZ 0
+execute if score @s alignX < 1 const run scoreboard players set @s alignX 16
+execute if score @s alignY < 1 const run scoreboard players set @s alignY 16
+execute if score @s alignZ < 1 const run scoreboard players set @s alignZ 16
 
 execute at @s run function chunk_align:chunk/align_x
 execute at @s run function chunk_align:chunk/align_y
 execute at @s run function chunk_align:chunk/align_z
 
 execute at @s align xyz positioned ~.5 ~ ~.5 run tp @s ~ ~ ~ ~ ~
-
-# Set minimum Dimensions
-execute if score @s countX < 1 const run scoreboard players set @s countX 1
-execute if score @s countY < 1 const run scoreboard players set @s countY 1
-execute if score @s countZ < 1 const run scoreboard players set @s countZ 1
-
-execute at @s if score @s countX > 1 const run function chunk_align:interchunk/align_x
-execute at @s if score @s countY > 1 const run function chunk_align:interchunk/align_y
-execute at @s if score @s countZ > 1 const run function chunk_align:interchunk/align_z
-
-function chunk_align:clone/x
-function chunk_align:clone/y
-function chunk_align:clone/z
-
-execute at @s run tp @s ~ ~ ~ 0 0
-
-tag @e[tag=chunk_align] remove chunk_align

@@ -2,7 +2,8 @@
 A Datapack to execute functions aligned to chunks.
 
 ## Description
-Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5). Furthermore it expands the marked chunks (armor stand with custom tags) into a rectangle (box) and aligns it with the resulting grid.
+Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5).
+Optionally you can set the alignment to whatever number above 0 you desire.
 
 ## Installation
 Coming soon...
