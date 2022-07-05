@@ -11,11 +11,11 @@ Coming soon...
 ## Usage
 1. Summon an armor stand with your tags.\
    `summon armor_stand ~ ~ ~ {Tags:["<your tag here>"],Marker:1b,Invisible:1b}`
-2. Set scoreboards to the dimensions of your box.
-   If a scoreboard is not set it gets defaulted to 1.\
-   `scoreboard players set @e[tag=<your tag here>,distance=..1] countX <size along x>`
-   `scoreboard players set @e[tag=<your tag here>,distance=..1] countX <size along y>`
-   `scoreboard players set @e[tag=<your tag here>,distance=..1] countX <size along z>`
+2. Set scoreboards to your alignments if needed.
+   If a scoreboard is not set it gets defaulted to 16 (1 Chunk).\
+   `scoreboard players set @e[tag=<your tag here>,distance=..1] alignX <size along x>`
+   `scoreboard players set @e[tag=<your tag here>,distance=..1] alignY <size along y>`
+   `scoreboard players set @e[tag=<your tag here>,distance=..1] alignZ <size along z>`
 3. Run `function chunk_align:align` as the armor stand.\
    `execute as @e[tag=<your tag here>,distance=..1] run function chunk_align:align`
 4. Execute your functions as all armor stands with your custom tags.
