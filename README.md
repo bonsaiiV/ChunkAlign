@@ -1,5 +1,5 @@
 # ChunkAlign
-A Datapack to execute functions aligned to chunks.
+A Datapack to align an armor stand to the chunk grid or any custom grid defined by scoreboards.
 
 ## Description
 Aligns an armor stand with the chunk grid to have the chunk position (0.5, 0.5, 0.5).
