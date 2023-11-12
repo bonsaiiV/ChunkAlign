@@ -25,4 +25,4 @@ Coming soon...
 You can find an example datapack under the `example` folder.
 
 ## Contributing
-Anyone is free to contribute but please take note of the style guide lines in [CONTRIBUTING.md](./CONTRIBUTING.md) or your pull request won't be accepted. Furthermore please keep the main point of this datapack in mind before adding unnessesary features which makes this datapack bloated.
+Anyone is free to contribute but please take note of the style guide lines in [CONTRIBUTING](./CONTRIBUTING.md) or your pull request won't be accepted. Furthermore please keep the main point of this datapack in mind before adding unnessesary features which makes this datapack bloated.
